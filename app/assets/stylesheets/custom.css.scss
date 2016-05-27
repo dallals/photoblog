@@ -1,0 +1,156 @@
+$navbar-default-bg: #660033;
+
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+#logo{
+	float:left;
+	font-size: 1.7em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+#logo:hover {
+	color: #fff;
+	text-decoration: none; 
+}
+
+.center{
+	text-align: center;
+}
+
+.jumbotron{
+	background-image: asset-url('hawaii-01.jpg');
+	background-size: cover;
+	height: 750px;
+}
+
+.headline3b {
+	margin-top: 30px;
+	color: white;
+}
+
+/*#container{
+	background-color: lightgrey;
+	height: 1700px;
+}*/
+
+.jumbotron h1{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: -1px;
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+.btn-xlarge{
+	font-size: 1.7em;
+	opacity: 0.8;
+}
+
+.article-meta-details{
+	border-top: 1px solid #eaeaea;
+	margin-top: 15px;
+}
+
+.article-actions{
+	border-top: 1px solid #eaeaea;
+	padding-top: 5px;
+}
+
+.description{
+	margin-top: 0;
+
+}
+
+.article-title{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.article-body{
+	border-top: 1px solid #eaeaea;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.listing{
+	list-style: none;
+	padding-left: 0;
+}
+
+.badge{
+	background-color: #CEF6F5;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+.input_checkbox input{
+	width: auto !important;
+}
+footer{
+	margin-top: 25px;
+	padding-top: 5px;
+	border-top: 1px solid black;
+	color: #777;
+}
+
+footer a:hover{
+	color: #222;
+}
+footer small{
+	float: left;
+}
+
+footer ul{
+	float: right;
+	list-style: none;
+}
+
+footer ul li{
+	float: left;
+	margin-left: 15px;
+
+}
+
+.hidden{ 
+	display: none; 
+}
+
+/*flash*/
+
+/*.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+*/

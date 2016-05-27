@@ -1,0 +1,19 @@
+<h1 align="Center">Welcome to <%= @user.name %>'s page </h1>
+
+<div class="row">
+	<div class="col-md-4 col-md-offset-4 center">
+	
+	</div>
+</div>	
+
+<h4 align="center"><%= @user.name %>'s posts | <%= link_to "Show All Photos", photos_path, class: "btn btn-xs btn-info"%></h4>
+<div class="center">
+	<%= will_paginate @user_articles %>
+</div>	
+
+<%= render 'articles/article', obj: @user_articles %>
+
+<div class="center">
+	<%= will_paginate @user_articles %>
+</div>
+

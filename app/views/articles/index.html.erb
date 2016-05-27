@@ -1,0 +1,17 @@
+<h1 align="center"> Showing all Photo Blog Posts</h1>
+<div align="center">
+	<%= link_to "Show All Photos", photos_path, class: "btn btn-xs btn-success"%>	
+	<%= link_to "Create new Post", new_article_path, class: "btn btn-xs btn-info"%>
+</div>	
+<div align="center">
+	<%= will_paginate %>
+</div>	
+<%= render 'article', obj: @articles %>
+<div align="center">
+	<%= will_paginate %>
+</div>
+<div align="center">
+	<%= link_to "Show All Photos", photos_path, class: "btn btn-xs btn-success"%>	
+	<%= link_to "Create new Post", new_article_path, class: "btn btn-xs btn-info"%>
+</div>	
+
