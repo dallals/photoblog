@@ -22,7 +22,8 @@ class ArticlesController < ApplicationController
 		flash[:success] = "Post was saved"
   		redirect_to article_path(@article)
   		else
-  		render :new
+      flash[:danger] = "Post must be present and title must have a minimum of 3 letters"
+  		redirect_to :back
   	end	
   end
 
