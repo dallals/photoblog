@@ -24,7 +24,7 @@ class PhotosController < ApplicationController
       flash[:success] = "The photo was added!"
       redirect_to photo_path(current_user)
     else
-      flash[:danger] = "Photo must be present and title must have a minimum of 3 letters"
+      flash[:danger] = "Photo must be present and title must have a minimum of 3 letters or you exceeded the maximum number of photos allowed (20)"
       redirect_to :back
     end
   end

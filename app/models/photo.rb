@@ -13,6 +13,19 @@ class Photo < ActiveRecord::Base
                             original: ['1500x1500', :jpg] },
                   convert_options: { thumb: "-quality 75 -strip",
                                      original: "-quality 85 -strip" }
+
+  LIMIT = 20
+  
+  validate do |record|
+    record.validate_photo_quota
+  end 
+
+  def validate_photo_quota
+    return unless self.user
+    if self.user.photos(:reload).count >= LIMIT
+      errors.add(:base, :exceeded_quota)
+    end
+  end                                  
   
   # has_attached_file :image,
   #                 styles: { thumb: ["64x64#", :jpg],
