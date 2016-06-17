@@ -25,7 +25,7 @@
               <!-- <li><a href="#">Something else here</a></li> -->
               <li role="separator" class="divider"></li>
               <% if current_user.admin?%>
-              <li><%= link_to "Send us a message", contacts_path %></li>
+                <li><%= link_to "Send us a message", contacts_path %></li>
               <% end %>
               <li role="separator" class="divider"></li>
               <li><%= link_to "Show All Photos", photos_path %></li>
@@ -42,7 +42,6 @@
               <li><%= link_to "#{category.name}", category_path(category) %></li>
             <% end %>
             <% if logged_in? and current_user.admin? %>
-            <li><a href="#">Something else here</a></li>
               <li role="separator" class="divider"></li>
               <li><%= link_to "Create new Category", new_category_path %></li>
             <% end %>
