@@ -24,7 +24,9 @@
               <li><%= link_to "New Post", new_article_path %></li>
               <!-- <li><a href="#">Something else here</a></li> -->
               <li role="separator" class="divider"></li>
+              <% if current_user.admin?%>
               <li><%= link_to "Send us a message", contacts_path %></li>
+              <% end %>
               <li role="separator" class="divider"></li>
               <li><%= link_to "Show All Photos", photos_path %></li>
               <li role="separator" class="divider"></li>
